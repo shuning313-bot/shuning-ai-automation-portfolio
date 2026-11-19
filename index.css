@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdfcf8;
+  --surface: #ffffff;
+  --surface-warm: #f3efe6;
+  --surface-sage: #e9ede3;
+  --ink: #1e2a22;
+  --muted: #5f6a61;
+  --line: #ddd8ca;
+  --sage: #617960;
+  --sage-dark: #435643;
+  --beige: #d9cdb4;
+  --accent: #b9874d;
+  --soft: #f7f2e7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #17201a;
+    --surface: #202b24;
+    --surface-warm: #28352c;
+    --surface-sage: #2c3a2d;
+    --ink: #f2f0e7;
+    --muted: #b7c0b5;
+    --line: #405044;
+    --sage: #a8b99e;
+    --sage-dark: #c9d8c5;
+    --beige: #8d7d61;
+    --accent: #e2b37d;
+    --soft: #263329;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--ink); font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; }
+.font-display { font-family: 'Fraunces', Georgia, serif; }
+::selection { background: #d9cdb4; color: #1e2a22; }
